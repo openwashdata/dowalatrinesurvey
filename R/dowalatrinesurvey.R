@@ -1,0 +1,90 @@
+#' dDowa Household Latrine survey 2020
+#' 
+#' This dataset documents household-level sanitation information collected in the Dowa District. 
+#' Each row represents an individual household's sanitation setup, usage patterns, perceptions, and maintenance behaviors. 
+#' The goal is to understand the quality, sustainability, and user satisfaction with existing latrines in rural and peri-urban communities.
+#' 
+#' @format A tibble with 89 rows and 80 variables
+#' \describe{
+#'   \item{submitted_on}{}
+#'   \item{community_type}{}
+#'   \item{latitude}{}
+#'   \item{longitude}{}
+#'   \item{traditional_authority}{}
+#'   \item{district}{}
+#'   \item{familiar_sanitation_types}{}
+#'   \item{latrines_in_community}{}
+#'   \item{sanitation_system_home}{}
+#'   \item{photo_sanitation_facility}{}
+#'   \item{sanitation_location_to_home}{}
+#'   \item{purchase_installation_process}{}
+#'   \item{latrine_installed}{}
+#'   \item{system_duration_magnitude}{}
+#'   \item{system_duration_unit}{}
+#'   \item{latrine_builder}{}
+#'   \item{facility_in_use}{}
+#'   \item{is_pit_lined}{}
+#'   \item{pit_lining_material}{}
+#'   \item{other_waste_disposed}{}
+#'   \item{other_waste_specified}{}
+#'   \item{biogas_generation}{}
+#'   \item{toilet_build_cost}{}
+#'   \item{cost_affordability}{}
+#'   \item{reasonable_cost_magnitude}{}
+#'   \item{reasonable_cost_unit}{}
+#'   \item{install_duration_magnitude}{}
+#'   \item{install_duration_unit}{}
+#'   \item{latrine_usage_process}{}
+#'   \item{safe_for_vulnerable}{}
+#'   \item{adapted_for_disabled}{}
+#'   \item{men_use_for_urination}{}
+#'   \item{liked_features}{}
+#'   \item{liked_features_other}{}
+#'   \item{sit_or_squat}{}
+#'   \item{currently_do}{}
+#'   \item{used_at_night}{}
+#'   \item{has_light}{}
+#'   \item{bring_own_light}{}
+#'   \item{bring_own_light_comments}{}
+#'   \item{odor_control}{}
+#'   \item{has_vent_pipe}{}
+#'   \item{prefer_less_odor}{}
+#'   \item{satisfaction_with_latrine}{}
+#'   \item{issues_with_animals}{}
+#'   \item{animal_issues_other}{}
+#'   \item{ideal_latrine_description}{}
+#'   \item{latrine_within_30m_water}{}
+#'   \item{latrine_distance_to_water}{}
+#'   \item{water_source}{}
+#'   \item{flush_with_water}{}
+#'   \item{latrine_description}{}
+#'   \item{soil_description}{}
+#'   \item{soil_description_other}{}
+#'   \item{latrine_user_count}{}
+#'   \item{latrine_built_year}{}
+#'   \item{expected_lifespan_magnitude}{}
+#'   \item{expected_lifespan_unit}{}
+#'   \item{privacy_enclosure_other_uses}{}
+#'   \item{above_ground_maintenance}{}
+#'   \item{above_ground_maintenance_other}{}
+#'   \item{above_ground_cleaning}{}
+#'   \item{uses_cleaning_chemicals}{}
+#'   \item{maintenance_frequency}{}
+#'   \item{maintenance_by}{}
+#'   \item{maintenance_by_other}{}
+#'   \item{maintenance_cost}{}
+#'   \item{cleaning_major_issue}{}
+#'   \item{pit_latrine_condition}{}
+#'   \item{is_filled_up}{}
+#'   \item{is_replacement}{}
+#'   \item{previous_filled_count}{}
+#'   \item{fill_up_speed}{}
+#'   \item{is_abandoned}{}
+#'   \item{reason_for_abandonment}{}
+#'   \item{is_emptied}{}
+#'   \item{why_not_emptied}{}
+#'   \item{why_not_emptied_other}{}
+#'   \item{emptying_frequency}{}
+#'   \item{emptying_method}{}
+#' }
+"dowalatrinesurvey"
