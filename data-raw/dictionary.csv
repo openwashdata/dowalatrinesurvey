@@ -1,0 +1,81 @@
+directory,file_name,variable_name,variable_type,Description
+data/,dowalatrinesurvey.rda,submitted_on,character,The date and time when the survey form was submitted.
+data/,dowalatrinesurvey.rda,community_type,character,"The classification of the community (e.g., rural, urban, peri-urban)."
+data/,dowalatrinesurvey.rda,latitude,numeric,The latitude coordinate of the sanitation facility location.
+data/,dowalatrinesurvey.rda,longitude,numeric,The longitude coordinate of the sanitation facility location.
+data/,dowalatrinesurvey.rda,traditional_authority,character,The name of the traditional authority governing the survey area.
+data/,dowalatrinesurvey.rda,district,character,The district in which the survey was conducted.
+data/,dowalatrinesurvey.rda,familiar_sanitation_types,character,"Types of latrines, toilets, or sanitation systems the respondent is familiar with."
+data/,dowalatrinesurvey.rda,latrines_in_community,character,Whether there are latrine systems present in the respondent’s community.
+data/,dowalatrinesurvey.rda,sanitation_system_home,character,The specific type of sanitation system used at the respondent’s home or facility.
+data/,dowalatrinesurvey.rda,photo_sanitation_facility,character,A photo taken of the sanitation facility.
+data/,dowalatrinesurvey.rda,sanitation_location_to_home,character,"The physical location of the sanitation facility in relation to the house (e.g., within compound, nearby)."
+data/,dowalatrinesurvey.rda,purchase_installation_process,character,Description of how the latrine was purchased and installed.
+data/,dowalatrinesurvey.rda,latrine_installed,character,Whether the respondent or household installed any latrine system.
+data/,dowalatrinesurvey.rda,system_duration_magnitude,numeric,The numerical duration indicating how long the current latrine system has been in use.
+data/,dowalatrinesurvey.rda,system_duration_unit,character,"The unit of time (e.g., years, months) for how long the system has been used."
+data/,dowalatrinesurvey.rda,latrine_builder,character,The person(s) or organization that helped build the toilet.
+data/,dowalatrinesurvey.rda,facility_in_use,character,Indicates whether the latrine facility is currently being used.
+data/,dowalatrinesurvey.rda,is_pit_lined,character,Whether the latrine pit is lined for structural stability.
+data/,dowalatrinesurvey.rda,pit_lining_material,character,"The material used to line the pit (e.g., bricks, concrete)."
+data/,dowalatrinesurvey.rda,other_waste_disposed,character,Additional non-human waste disposed of in the latrine.
+data/,dowalatrinesurvey.rda,other_waste_specified,character,Details or specification of the other types of waste disposed.
+data/,dowalatrinesurvey.rda,biogas_generation,character,Whether the sanitation system generates biogas.
+data/,dowalatrinesurvey.rda,toilet_build_cost,character,Reported cost of constructing the toilet.
+data/,dowalatrinesurvey.rda,cost_affordability,character,Perception of how affordable it was to construct the toilet.
+data/,dowalatrinesurvey.rda,reasonable_cost_magnitude,numeric,Estimated amount considered reasonable for building a latrine.
+data/,dowalatrinesurvey.rda,reasonable_cost_unit,character,"Unit of the reasonable cost (e.g., MWK, USD)."
+data/,dowalatrinesurvey.rda,install_duration_magnitude,numeric,Time taken to construct the toilet (numeric value).
+data/,dowalatrinesurvey.rda,install_duration_unit,character,"Unit for time taken (e.g., days, weeks)."
+data/,dowalatrinesurvey.rda,latrine_usage_process,character,Step-by-step user explanation of how the latrine is used.
+data/,dowalatrinesurvey.rda,safe_for_vulnerable,character,"Whether the latrine is considered safe for children, elderly, and persons with disabilities."
+data/,dowalatrinesurvey.rda,adapted_for_disabled,character,Whether the latrine is physically adapted for disabled users (based on observation).
+data/,dowalatrinesurvey.rda,men_use_for_urination,character,If men in the community consistently use latrines for urination.
+data/,dowalatrinesurvey.rda,liked_features,character,Features of the latrine that users appreciate.
+data/,dowalatrinesurvey.rda,liked_features_other,character,"Additional specific features liked, as specified by respondent."
+data/,dowalatrinesurvey.rda,sit_or_squat,character,Preferred toilet posture (sitting or squatting).
+data/,dowalatrinesurvey.rda,currently_do,character,Actual practice (sitting or squatting) during use.
+data/,dowalatrinesurvey.rda,used_at_night,character,Whether the latrine is used during night-time hours.
+data/,dowalatrinesurvey.rda,has_light,character,If there is a light source inside the latrine.
+data/,dowalatrinesurvey.rda,bring_own_light,character,Whether users bring their own light when using the latrine at night.
+data/,dowalatrinesurvey.rda,bring_own_light_comments,character,Comments or descriptions of the type of light used or brought.
+data/,dowalatrinesurvey.rda,odor_control,character,Whether controlling odor in the latrine is a concern.
+data/,dowalatrinesurvey.rda,has_vent_pipe,character,Indicates if the latrine has a ventilation pipe.
+data/,dowalatrinesurvey.rda,prefer_less_odor,character,Whether the respondent would prefer a latrine with less odor.
+data/,dowalatrinesurvey.rda,satisfaction_with_latrine,character,Respondent’s overall satisfaction with their current latrine.
+data/,dowalatrinesurvey.rda,issues_with_animals,character,Whether the latrine has experienced issues with rodents or burrowing animals.
+data/,dowalatrinesurvey.rda,animal_issues_other,character,Additional details about animal-related issues.
+data/,dowalatrinesurvey.rda,ideal_latrine_description,character,Description of a respondent’s ideal latrine setup.
+data/,dowalatrinesurvey.rda,latrine_within_30m_water,character,Whether a latrine is located within 30 meters of a drinking water source.
+data/,dowalatrinesurvey.rda,latrine_distance_to_water,numeric,Measured distance from the latrine to the nearest water source (in meters).
+data/,dowalatrinesurvey.rda,water_source,character,The main source of water for the household.
+data/,dowalatrinesurvey.rda,flush_with_water,character,Whether water is used to flush the latrine.
+data/,dowalatrinesurvey.rda,latrine_description,character,Narrative description of the latrine owned or used.
+data/,dowalatrinesurvey.rda,soil_description,character,Type and condition of soil around the latrine.
+data/,dowalatrinesurvey.rda,soil_description_other,character,Further details about the soil condition if not covered in options.
+data/,dowalatrinesurvey.rda,latrine_user_count,character,Number of people who use the latrine.
+data/,dowalatrinesurvey.rda,latrine_built_year,character,Year in which the latrine was built.
+data/,dowalatrinesurvey.rda,expected_lifespan_magnitude,numeric,How long the latrine is expected to last (numeric).
+data/,dowalatrinesurvey.rda,expected_lifespan_unit,character,"Unit of expected lifespan (e.g., years, months)."
+data/,dowalatrinesurvey.rda,privacy_enclosure_other_uses,character,"Whether the latrine privacy area is used for other activities (e.g., bathing, changing clothes)."
+data/,dowalatrinesurvey.rda,above_ground_maintenance,character,Types of maintenance done on the above-ground structure of the latrine.
+data/,dowalatrinesurvey.rda,above_ground_maintenance_other,character,Additional details on maintenance tasks not listed.
+data/,dowalatrinesurvey.rda,above_ground_cleaning,character,Cleaning practices used for the above-ground part of the latrine.
+data/,dowalatrinesurvey.rda,uses_cleaning_chemicals,character,Whether any chemicals are used for cleaning.
+data/,dowalatrinesurvey.rda,maintenance_frequency,character,How often the latrine is maintained or cleaned.
+data/,dowalatrinesurvey.rda,maintenance_by,character,Who is responsible for maintenance and cleaning of the latrine.
+data/,dowalatrinesurvey.rda,maintenance_by_other,character,"Other persons or roles responsible, if not listed."
+data/,dowalatrinesurvey.rda,maintenance_cost,character,Estimated cost spent on maintaining and cleaning the latrine.
+data/,dowalatrinesurvey.rda,cleaning_major_issue,character,Whether cleaning the latrine is a major concern for the user.
+data/,dowalatrinesurvey.rda,pit_latrine_condition,character,Current physical condition of the pit latrine.
+data/,dowalatrinesurvey.rda,is_filled_up,character,Whether the latrine pit is currently filled up.
+data/,dowalatrinesurvey.rda,is_replacement,character,If the current latrine is a replacement for a previously filled one.
+data/,dowalatrinesurvey.rda,previous_filled_count,numeric,Number of pit latrines that filled up before this one.
+data/,dowalatrinesurvey.rda,fill_up_speed,character,How quickly the previous latrine filled up.
+data/,dowalatrinesurvey.rda,is_abandoned,character,Whether the latrine is abandoned or potentially reusable.
+data/,dowalatrinesurvey.rda,reason_for_abandonment,character,Reason why the latrine was abandoned.
+data/,dowalatrinesurvey.rda,is_emptied,character,Whether the latrine has ever been emptied.
+data/,dowalatrinesurvey.rda,why_not_emptied,character,Reason why the latrine hasn’t been emptied.
+data/,dowalatrinesurvey.rda,why_not_emptied_other,character,Additional specification on why the latrine hasn’t been emptied.
+data/,dowalatrinesurvey.rda,emptying_frequency,character,How often the latrine is emptied (if applicable).
+data/,dowalatrinesurvey.rda,emptying_method,character,The method used for emptying the pit latrine.
