@@ -1,0 +1,12 @@
+
+bibentry(bibtype = "Misc",
+         key = "mhango:2025",
+         title = "dowalatrinesurvey: Household Latrine Survey Data from Dowa and Thyolo, Malawi",
+         author = person(given = "Emmanuel",
+                         family = "Mhango",
+                         email = "emmanuellmhango@gmail.com",
+                         comment = c(ORCID = "0000-0003-3197-6244")),
+         year = "2025",
+         url = "https://github.com/openwashdata/dowalatrinesurvey",
+         abstract = "Contains survey data collected in October 2020 from households in Dowa and Thyolo Districts, Malawi. The dataset includes detailed information on household sanitation practices, latrine infrastructure, usage patterns, maintenance behaviors, and user preferences across rural and peri-urban communities. Data was collected using the mWater survey platform by BASEflow Malawi enumerators.",
+         version = "0.0.0.9000")
