@@ -1,0 +1,222 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# Household Latrine User Survey – Dowa & Thyolo Malawi (2020)
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+[![DOI](https://zenodo.org/badge/DOI/.svg)](https://zenodo.org/doi/)
+<!-- badges: end -->
+
+This dataset was collected in October 2020 from Dowa and Thyolo Districts, Malawi,
+using the mWater survey platform. It captures detailed information on
+household sanitation practices and latrine usage across both rural and
+peri-urban communities. The survey was conducted by trained enumerators
+working with BASEflow Malawi as part of efforts to document and improve
+Water, Sanitation, and Hygiene (WASH) infrastructure and behavior in the
+region.
+
+**Potential Use Cases**
+
+This data is a valuable resource for multiple stakeholders, including:
+
+1.  Local Government & Planners: To inform sanitation infrastructure
+    planning and budgeting in rural and peri-urban Malawi.
+
+2.  Public Health Practitioners: To study the relationship between
+    latrine use and hygiene-related health outcomes.
+
+3.  WASH Sector NGOs: To identify service delivery gaps, monitor impact,
+    or design targeted behavior change programs.
+
+4.  Researchers & Academics: For sanitation behavior studies,
+    infrastructure sustainability, and social acceptability of different
+    latrine models.
+
+5.  Donors & Development Partners: To assess community sanitation needs,
+    target investments, and support SDG 6 (Clean Water and Sanitation).
+
+## Installation
+
+You can install the development version of dowalatrinesurvey from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/dowalatrinesurvey")
+```
+
+```{r}
+## Run the following code in console if you dont have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in your
+    browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/dowalatrinesurvey/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to Latrine Household Data for Dowa and Thyolo Districts
+in Malawi for the year 2020.
+
+```{r}
+library(dowalatrinesurvey)
+```
+
+### dowalatrinesurvey
+
+The dataset `dowalatrinesurvey` contains `r nrow(dowalatrinesurvey)`
+observations and `r ncol(dowalatrinesurvey)` variables
+
+```{r}
+dowalatrinesurvey |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "dowalatrinesurvey.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Visualizations
+
+```{r}
+library(dowalatrinesurvey)
+
+# Visualization 1 Spatial Distribution Map by Community Type
+# Purpose is to show how households with different community_type (Rural vs Peri-Urban) are spatially distributed across your study area.
+
+library(dplyr)
+library(ggplot2)
+library(maps)
+library(stringr)
+# Clean community_type in dowalatrinesurvey
+dowalatrinesurvey <- dowalatrinesurvey %>% mutate(community_type = trimws(community_type))
+
+# Get Malawi map data from maps package
+malawi_map <- map_data("world", region = "Malawi")
+
+# Plot using dowalatrinesurvey
+ggplot() +
+  geom_polygon(
+    data = malawi_map,
+    aes(x = long, y = lat, group = group),
+    fill = "gray90",
+    color = "black"
+  ) +
+  geom_point(
+    data = dowalatrinesurvey,
+    aes(x = longitude, y = latitude, color = community_type),
+    size = 3, alpha = 0.7
+  ) +
+  coord_fixed(1.3) +  # fix aspect ratio for lat/lon
+  labs(
+    title = "Spatial Distribution of Surveyed Households by Community Type",
+    x = "Longitude",
+    y = "Latitude",
+    color = "Community Type"
+  ) +
+  theme_minimal()
+
+# Visualization 2: Grouped bar chart showing count of latrine satisfaction by community type
+# visually compare the levels of satisfaction with latrines between different types of communities
+# (e.g., Rural vs Peri-Urban)
+
+# Clean and factor satisfaction variable
+data <- dowalatrinesurvey %>%
+  mutate(
+    satisfaction_clean = str_extract(satisfaction_with_latrine, "^[0-9]"),
+    satisfaction_clean = factor(satisfaction_clean, levels = c("1", "2", "3"),
+                                labels = c("Not Satisfied", "Neutral", "Satisfied"))
+  ) %>%
+  filter(!is.na(satisfaction_clean))  # Remove NA
+
+# Summarize counts
+satisfaction_summary <- data %>%
+  group_by(community_type, satisfaction_clean) %>%
+  summarise(count = n(), .groups = "drop")
+
+# Plot grouped bar chart (counts)
+ggplot(satisfaction_summary, aes(x = community_type, y = count, fill = satisfaction_clean)) +
+  geom_bar(stat = "identity", position = "dodge") +  # side-by-side bars
+  labs(
+    title = "Latrine Satisfaction by Community Type",
+    x = "Community Type",
+    y = "Count",
+    fill = "Satisfaction Level"
+  ) +
+  theme_minimal()
+
+```
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("dowalatrinesurvey")
+```
