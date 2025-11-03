@@ -8,7 +8,7 @@
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-[![DOI](https://zenodo.org/badge/DOI/.svg)](https://zenodo.org/doi/)
+[![DOI](https://zenodo.org/badge/1008205266.svg)](https://doi.org/10.5281/zenodo.17512718)
 <!-- badges: end -->
 
 This dataset was collected in October 2020 from Dowa and Thyolo

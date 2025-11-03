@@ -13,7 +13,6 @@
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Household Latrine Survey Data from Dowa and Thyolo, Malawi">
 <meta name="description" content="Contains survey data collected in October 2020 from households in Dowa and Thyolo Districts, Malawi. The dataset includes detailed information on household sanitation practices, latrine infrastructure, usage patterns, maintenance behaviors, and user preferences across rural and peri-urban communities. Data was collected using the mWater survey platform by BASEflow Malawi enumerators.">
 <meta property="og:description" content="Contains survey data collected in October 2020 from households in Dowa and Thyolo Districts, Malawi. The dataset includes detailed information on household sanitation practices, latrine infrastructure, usage patterns, maintenance behaviors, and user preferences across rural and peri-urban communities. Data was collected using the mWater survey platform by BASEflow Malawi enumerators.">
-<script defer data-domain="openwashdata.github.io" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -38,7 +37,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
-<li class="nav-item"><a class="nav-link" href="https://github.com/openwashdata/dowalatrinesurvey/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/openwashdata/dowalatrinesurvey/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
 
@@ -51,7 +50,7 @@
 </h1></div>
 <!-- badges: start -->
 
-<p><a href="https://zenodo.org/doi/" class="external-link"><img src="https://zenodo.org/badge/DOI/.svg" alt="DOI"></a> <!-- badges: end --></p>
+<p><a href="https://doi.org/10.5281/zenodo.17512718" class="external-link"><img src="https://zenodo.org/badge/1008205266.svg" alt="DOI"></a> <!-- badges: end --></p>
 <p>This dataset was collected in October 2020 from Dowa and Thyolo Districts, Malawi, using the mWater survey platform. It captures detailed information on household sanitation practices and latrine usage across both rural and peri-urban communities. The survey was conducted by trained enumerators working with BASEflow Malawi as part of efforts to document and improve Water, Sanitation, and Hygiene (WASH) infrastructure and behavior in the region.</p>
 <p><strong>Potential Use Cases</strong></p>
 <p>This data is a valuable resource for multiple stakeholders, including:</p>
@@ -97,8 +96,8 @@
 </tr></thead>
 <tbody><tr>
 <td align="left">dowalatrinesurvey</td>
-<td align="left"><a href="https://github.com/openwashdata/dowalatrinesurvey/raw/main/inst/extdata/dowalatrinesurvey.csv">Download CSV</a></td>
-<td align="left"><a href="https://github.com/openwashdata/dowalatrinesurvey/raw/main/inst/extdata/dowalatrinesurvey.xlsx">Download XLSX</a></td>
+<td align="left"><a href="https://github.com/openwashdata/dowalatrinesurvey/raw/main/inst/extdata/dowalatrinesurvey.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/openwashdata/dowalatrinesurvey/raw/main/inst/extdata/dowalatrinesurvey.xlsx" class="external-link">Download XLSX</a></td>
 </tr></tbody>
 </table>
 </div>
@@ -107,7 +106,7 @@
 </h2>
 <p>The package provides access to Latrine Household Data for Dowa and Thyolo Districts in Malawi for the year 2020.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/openwashdata/dowalatrinesurvey">dowalatrinesurvey</a></span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/openwashdata/dowalatrinesurvey" class="external-link">dowalatrinesurvey</a></span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="dowalatrinesurvey">dowalatrinesurvey<a class="anchor" aria-label="anchor" href="#dowalatrinesurvey"></a>
 </h3>
@@ -1997,7 +1996,7 @@ The method used for emptying the pit latrine.
 <h2 id="visualizations">Visualizations<a class="anchor" aria-label="anchor" href="#visualizations"></a>
 </h2>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/openwashdata/dowalatrinesurvey">dowalatrinesurvey</a></span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/openwashdata/dowalatrinesurvey" class="external-link">dowalatrinesurvey</a></span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Visualization 1 Spatial Distribution Map by Community Type</span></span>
 <span><span class="co"># Purpose is to show how households with different community_type (Rural vs Peri-Urban) are spatially distributed across your study area.</span></span>
@@ -2099,11 +2098,19 @@ The method used for emptying the pit latrine.
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/openwashdata/dowalatrinesurvey/">Browse source code</a></li>
-<li><a href="https://github.com/openwashdata/dowalatrinesurvey/issues">Report a bug</a></li>
-<li><a href="https://github.com/openwashdata/dowalatrinesurvey">GitHub repository</a></li>
+<li><a href="https://github.com/openwashdata/dowalatrinesurvey/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/openwashdata/dowalatrinesurvey/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
+<div class="license">
+<h2 data-toc-skip>License</h2>
+<ul class="list-unstyled">
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://creativecommons.org/licenses/by/4.0" class="external-link">CC BY 4.0</a></small></li>
+</ul>
+</div>
+
 
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
@@ -2115,15 +2122,8 @@ The method used for emptying the pit latrine.
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>So <em>who</em> does the work?</li>
 <li>Emmanuel Mhango <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-3197-6244" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
-<li>Rhodrick D. Sagawa <br><small class="roles"> Contributor </small>   </li>
-<li>Paul Kumpukwe <br><small class="roles"> Contributor </small>   </li>
-<li>Rodney Kananji <br><small class="roles"> Contributor </small>   </li>
-<li>Baleke Banda <br><small class="roles"> Contributor </small>   </li>
-<li>Veronica Chagunda <br><small class="roles"> Contributor </small>   </li>
-<li>Dickson Wandawanda <br><small class="roles"> Contributor </small>   </li>
-<li>Thanks all!</li>
+<li><a href="authors.html">More about authors...</a></li>
 </ul>
 </div>
 
@@ -2134,19 +2134,12 @@ The method used for emptying the pit latrine.
 </ul>
 </div>
 
-<div class="funding">
-<h2 data-toc-skip>Funding</h2>
-<ul class="list-unstyled">
-<li><p>This project was funded by the <a href="https://ethrat.ch/en/eth-domain/open-research-data/" class="external-link">Open Research Data Program of the ETH Board</a>.</p></li>
-</ul>
-</div>
-
   </aside>
 </div>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Crafted by Emmanuel Mhango.</p>
+  <p>Developed by Emmanuel Mhango.</p>
 </div>
 
 <div class="pkgdown-footer-right">
