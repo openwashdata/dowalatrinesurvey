@@ -2,8 +2,6 @@
 
 [![DOI](https://zenodo.org/badge/1008205266.svg)](https://doi.org/10.5281/zenodo.17512718)
 
-A data package published by [openwashdata](https://openwashdata.org).
-
 This dataset was collected in October 2020 from Dowa and Thyolo
 Districts, Malawi, using the mWater survey platform. It captures
 detailed information on household sanitation practices and latrine usage
@@ -266,6 +264,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
