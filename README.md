@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Household Latrine User Survey – Dowa & Thyolo Malawi (2020)
+# Household Latrine User Survey – Dowa & Thyolo Malawi (2020) <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 
@@ -10,8 +10,6 @@
 
 [![DOI](https://zenodo.org/badge/1008205266.svg)](https://doi.org/10.5281/zenodo.17512718)
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 This dataset was collected in October 2020 from Dowa and Thyolo
 Districts, Malawi, using the mWater survey platform. It captures
@@ -2088,6 +2086,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
